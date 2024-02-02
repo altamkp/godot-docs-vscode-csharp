@@ -1,0 +1,46 @@
+{
+  "name": "godot-docs-vscode-csharp",
+  "displayName": "Godot Docs for C#",
+  "description": "Hover on Godot keywords to show link to online documentation",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "workspaceContains:**/*.godot"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [
+        {
+          "id": "csharp",
+          "extensions": [ ".cs" ]
+        }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@typescript-eslint/eslint-plugin": "^6.19.1",
+    "@typescript-eslint/parser": "^6.19.1",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3",
+    "@vscode/test-cli": "^0.0.4",
+    "@vscode/test-electron": "^2.3.9"
+  },
+  "extensionDependencies": [
+    "ms-dotnettools.csharp"
+  ]
+}
