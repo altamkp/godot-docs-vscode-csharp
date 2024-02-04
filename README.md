@@ -1,6 +1,6 @@
 # Godot Docs for C#
 
-Hover on Godot keywords to show link to online documentation. 
+Hover on C# Godot keywords in VS Code to show link to online documentation.
 
 ![Showcase](docs/images/showcase.gif)
 
@@ -16,5 +16,5 @@ Hover on Godot keywords to show link to online documentation.
 
 ## Installation
 
-- VS Code (recommend)
-- Github releases
+- [VS Code marketplace](https://marketplace.visualstudio.com/items?itemName=altamkp.godot-docs-vscode-csharp) (recommended)
+- [Github releases](https://github.com/altamkp/godot-docs-vscode-csharp/releases)

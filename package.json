@@ -4,6 +4,7 @@
     "description": "Hover on Godot keywords to show link to online documentation",
     "icon": "icon.png",
     "version": "1.0.0",
+    "publisher": "altamkp",
     "engines": {
         "vscode": "^1.85.0"
     },
